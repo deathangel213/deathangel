@@ -17,11 +17,11 @@ server.post('/api/messages', connector.listen());
 
 bot.dialog('/', [
    function (session) {
-        builder.Prompts.text(session, " I’m practicing metal right now, but I always have time for my fellow LA metalheads!:the_horns: What’s your name?");
+        builder.Prompts.text(session, "I’m practicing metal right now, but I always have time for my fellow LA metalheads!:the_horns: What’s your name?");
     },
     function (session, results) {
         session.userData.name = results.response;
-        builder.Prompts.text(session, results.response + " Metal punched a tin can, hahaha! What's Up?"); 
+        builder.Prompts.text(session, results.response + "Metal punched a tin can, hahaha! What's Up?"); 
     },
     function (session, results) {
         builder.Prompts.text(session, "My favorite place is Masa in Echo Park");
