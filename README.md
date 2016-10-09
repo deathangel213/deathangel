@@ -1,1 +1,3 @@
 # deathangel
+
+`npm install`
