@@ -1,3 +1,0 @@
-# deathangel
-
-`npm install`
