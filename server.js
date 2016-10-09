@@ -33,7 +33,7 @@ bot.dialog('/', [
         builder.Prompts.text(session, "Well I think hanging out on the sidewalk is pretty rad.");
     },
     function (session, results) {
-        builder.Prompts.text(session, "There are some great Museums around this town... Like the iron works place, the metal recylcing place, any junkyard with lots of metal.");
+        builder.Prompts.text(session, "There are some great Museums around this town... Like the iron works place, the metal recycling place, any junkyard with lots of metal.");
     },
     function (session, results) {
         builder.Prompts.text(session, "You have a very unmetal name. I think I'll call you Thrasher");
