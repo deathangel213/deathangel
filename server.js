@@ -21,14 +21,12 @@ bot.dialog('/', [
     },
     function (session, results) {
         session.userData.name = results.response;
-        builder.Prompts.number(session, results.response + " Metal punched a tin can, hahaha! What's Up?"); 
+        builder.Prompts.text(session, results.response + " Metal punched a tin can, hahaha! What's Up?"); 
     },
     function (session, results) {
-        session.userData.coding = results.response;
-        builder.Prompts.choice(session, "My favorite place is Masa in Echo Park");
+        builder.Prompts.text(session, "My favorite place is Masa in Echo Park");
     },
     function (session, results) {
-        session.userData.language = results.response.entity;
         session.send("Well, I’m always metaling…Check out this place ");
     }
 ]);
