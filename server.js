@@ -21,7 +21,7 @@ bot.dialog('/', [
     },
     function (session, results) {
         session.userData.name = results.response;
-        builder.Prompts.text(session, results.response + "Metal punched a tin can, hahaha! What's Up?"); 
+        builder.Prompts.text(session, results.response + " Metal punched a tin can, hahaha! What's Up?"); 
     },
     function (session, results) {
         builder.Prompts.text(session, "My favorite place is Masa in Echo Park https://www.yelp.com/biz/masa-of-echo-park-los-angeles");
