@@ -45,6 +45,7 @@ function buildBot(builder, connector) {
             session.send("May rock be with you");
         }
     ]);
+    return bot;
 }
 
 
