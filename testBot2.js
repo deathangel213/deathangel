@@ -31,9 +31,9 @@ function buildBot(builder, connector) {
 
     // dialog.onDefault(builder.DialogAction.send("I'm sorry I didn't understand. I can only create & delete alarms."));
 
-    // intents.onDefault((session) => {
-    //     session.send("No idea what you're talking about...");
-    // });
+    intents.onDefault((session) => {
+        session.send("No idea what you're talking about...");
+    });
 
     return bot;
 
