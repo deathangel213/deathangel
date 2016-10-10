@@ -6,7 +6,7 @@ function buildBot(builder, connector) {
     var intents = new builder.IntentDialog({ recognizers: [recognizer] });
     bot.dialog('/', intents);
 
-    intents.matchesAny(['FindFood', 'findFood', 'findfood', 'deathangel.FindFood', 'deathangel:FindFood'], [
+    intents.matches('FindFood', [
         function (session, args, next) {
             session.send("You want some food");
         // var task = builder.EntityRecognizer.findEntity(args.entities, 'TaskTitle');
